@@ -102,6 +102,7 @@ function mutatKerdes() {
             valaszKivalasztva(option);
         });
         valaszokLista.appendChild(li);
+        console.log("Válasz lehetőség:", option);
     });
     // Időzítő indítása
     inditIdozito();
@@ -175,8 +176,9 @@ ujraGomb.addEventListener('click', () => {
     eredmenykep.style.display = "none";
 
     kvizCimElem.innerText = valasztottKategoria + " kvíz";
-    mutatKerdes();
     console.log("Újra!");
+    mutatKerdes();
+
 });
 
 // Vissza gomb
