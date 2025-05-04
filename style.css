@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: royalblue;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.kezdokep {
+    display: block;
+    background: whitesmoke;
+    width: 600px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px;
+    text-align: center;
+}
+
+.kezdo_cim{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.kategoriak{
+    padding: 10px;
+    background: lightblue;
+    border: 1px solid navy;
+    border-radius: 10px;
+}
+
+.kat_cim{
+    font-size: 25;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.kat_lehet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    gap: 15px;
+}
+
+.kat_gomb{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    border: 1px solid navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.kat_gomb:hover{
+  background: rgb(157, 157, 255);
+}
+
+.kat_gomb.kivalasztva {
+    background: orange;
+}
+
+
+.start_gomb{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+
+.start_gomb:hover{
+    background: darkorange;
+    color: black;
+}
+
+.kvizkep{
+    display: none;
+    background: white;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px;
+    text-align: center;
+}
+
+.kerdes{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.kviz_fej{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background: lightblue;
+    border-radius: 5px;
+    border-bottom: 1px solid navy;
+}
+
+.kviz_cim{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.kerdes_szam{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kviz{
+    padding: 20px;
+}
+
+.valaszok{
+    list-style: none;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.valasz_lehet{
+    padding: 10px;
+    background: lightskyblue;
+    border: 1px solid navy;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.valasz_lehet:hover{
+    background: #8f8fff;
+}
+
+
+.valasz_lehet.helyes {
+    background: rgb(24, 193, 24);
+    color: white;
+}
+
+.valasz_lehet.helytelen {
+    background: rgb(255, 38, 38);
+    color: white;
+}
+
+.kviz_lab{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background: lightblue;
+    border-radius: 5px;
+    border-top: 1px solid navy;
+}
+
+.tovabb_gomb{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.tovabb_gomb:hover{
+    background: darkorange;
+    color: black;
+}
+
+.idozito {
+    font-weight: bold;
+    font-size: 18px;
+    color: navy;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+    transition: 0.3s ease;
+    border: 1px solid navy;
+}
+
+.idozito.warning {
+    color: rgb(255, 38, 38);
+    border: 1px solid rgb(255, 38, 38);
+}
+
+.eredmenykep{
+    display: none;
+    background: white;
+    width: 600px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px;
+    text-align: center;
+}
+
+.eredmeny_cim{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.erdemeny_uzenet{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+
+}
+
+.vissza_gomb{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    transition: 0.2s ease;
+    width: 100px;
+}
+
+.vissza_gomb:hover{
+    background: rgb(7, 7, 52);
+}
+
+.ujra_gomb{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    transition: 0.2s ease;
+    width: 100px;
+}
+
+.ujra_gomb:hover{
+    background: #0e0e4d;
+}
+
+
+.info_gomb{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: white;
+    border: 1px solid navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+}
+
+.info_gomb:hover{
+    background: rgb(181, 181, 255);
+  }
+
+
+.infokep{
+    display: none;
+    background: white;
+    width: 600px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px;
+    text-align: center;
+}
+
+.info_cim{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info_szoveg{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+.info_vissza_gomb{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: navy;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    transition: 0.2s ease;
+    width: 100px;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kvíz játék</title>
+</head> 
+<body>
+    <div class="kezdokep">
+        <h2 class="kezdo_cim">Kvíz játék</h2>
+        <div class="kategoriak">
+            <h3 class="kat_cim">Válasszon kategóriát!</h3>
+                <div class="kat_lehet">
+                    <button class="kat_gomb">Általános tudás</button>
+                    <button class="kat_gomb">Történelem</button>
+                    <button class="kat_gomb">Földrajz</button>
+                    <button class="kat_gomb">Filmek</button>
+                </div>
+        </div>
+        <button class="start_gomb">Játék</button><br>
+        <button class="info_gomb">Infó</button>
+
+    </div>
+
+    <div class="kvizkep">
+        <header class="kviz_fej">
+            <h2 class="kviz_cim">Történlem kvíz</h2>
+            <p class="kerdes_szam">1 / 10</p>
+        </header>
+        <div class="kviz">
+            <h1 class="kerdes">Kérdés?</h1>
+            <ul class="valaszok">
+                <li class="valasz_lehet"><p>1</p></li>
+                <li class="valasz_lehet"><p>2</p></li>
+                <li class="valasz_lehet"><p>3</p></li>
+                <li class="valasz_lehet"><p>4</p></li>
+            </ul>
+        </div>
+        <div class="kviz_lab">
+                <p class="idozito">15 mp</p>
+            <button class="tovabb_gomb">Tovább -></button>
+        </div>
+    </div>
+
+    <div class="eredmenykep">
+        <h2 class="eredmeny_cim">Sikeresen teljesítetted a kvízt!</h2>
+        <p class="erdemeny_uzenet">Az elért eredményed: 6/10</p>
+        <button class="ujra_gomb">Újra</button>
+        <button class="vissza_gomb">Vissza</button>
+    </div>
+    
+    <div class="infokep">
+        <h2 class="info_cim">Kvíz játék</h2>
+        <p class="info_szoveg">Tesztelje a tudását ezzel a kvízzel! Válasszon egy kategóriát, és kapni fog 10 kérdést 4 válaszlehetőséggel.
+            Minden kérdésre csak egy helyes válasz van. A helyes válaszért 1 pontot kap, a hibás válaszért 0 pontot.
+            A kérdés megválaszolására 20 másodperc áll rendelkezásre! Ha nem válaszol a kérdésre, akkor 0 pontot kap.
+            Meg tudja válaszolni az összest?</p>
+        <button class="info_vissza_gomb">Vissza</button>
+    </div>
+
+    <script src="kvizkerdesek.js"></script>
+    <script src="kvizscript.js"></script>
+</body>
+</html>
