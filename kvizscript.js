@@ -144,6 +144,7 @@ tovabbGomb.addEventListener('click', () => {
     jelenKerdesIdnex++;
 
     if (jelenKerdesIdnex >= jelenKviz.length) {
+        tovabbGomb.innerHTML = "Bejejezés";
         jatekVege();
     } else {
         mutatKerdes();
@@ -205,7 +206,7 @@ function inditIdozito() {
         }
     
         if (idoHatra <= 0) {
-            clearInterval(timer); // Időzítő leállítása
+            clearInterval(ido); // Időzítő leállítása
             automatikusLeallas(); // Válaszadás leállítása
             idozitoElem.classList.remove('warning');
         }
