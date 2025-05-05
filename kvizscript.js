@@ -106,6 +106,7 @@ function mutatKerdes() {
     });
     // Időzítő indítása
     inditIdozito();
+    tovabbGomb.disabled = true;
     console.log(jelenKerdesIdnex+1, "Kérdés szövege:", jelenKerdes.question);
 }
 
@@ -144,13 +145,10 @@ tovabbGomb.addEventListener('click', () => {
     jelenKerdesIdnex++;
 
     if (jelenKerdesIdnex >= jelenKviz.length) {
-        tovabbGomb.innerHTML = "Bejejezés";
         jatekVege();
     } else {
         mutatKerdes();
     }
-
-    tovabbGomb.disabled = true;
     console.log("Tovább!");
 });
 
@@ -203,6 +201,9 @@ function inditIdozito() {
         idozitoElem.innerText = `${idoHatra} mp`;
         if (idoHatra <= 5) {
             idozitoElem.classList.add('warning');
+        }
+        else {
+            idozitoElem.classList.remove('warning');
         }
     
         if (idoHatra <= 0) {

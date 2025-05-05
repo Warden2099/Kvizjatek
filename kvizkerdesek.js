@@ -132,7 +132,7 @@ const tortenelem = [
       options: ["Franciaország", "Spanyolország", "Anglia", "Németország"], 
       correctAnswer: "Franciaország" },
     { question: "Ki volt a francia forradalom idején a király?", 
-      ptions: ["XIV. Lajos", "XVI. Lajos", "III. Napóleon", "I. Fülöp"], 
+      options: ["XIV. Lajos", "XVI. Lajos", "III. Napóleon", "I. Fülöp"], 
       correctAnswer: "XVI. Lajos" },
     { question: "Melyik nép építette a Machu Picchut?", 
       options: ["Maja", "Inka", "Azték", "Olmék"], 
